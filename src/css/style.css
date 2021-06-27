@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.maydon {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../image/dust.png);
+}
+
+.oyinchi {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background-image: url(../image/player_top.png);
+    background-repeat: no-repeat;
+}
+
+.bot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/bot.png);
+    background-repeat: no-repeat;
+}
+
+.xujum {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-image: url(../image/oq.png);
+    background-repeat: no-repeat;
+}
+
+.bot-xujum {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-image: url(../image/oq.png);
+    background-repeat: no-repeat;
+}
+
+.tablo {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 150px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.audio {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+.jon {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 150px;
+    padding: 20px;
+    font-size: 26px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.ochko {
+    display: block;
+}
+
+.tugadi {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/tugadi.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.jadval {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.jadval span {
+    display: block;
+    font-size: 50px;
+}
+
+.jadval a {
+    display: block;
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+}
