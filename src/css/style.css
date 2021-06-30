@@ -52,10 +52,59 @@
     border: 3px solid black;
 }
 
-.audio {
+.boshqar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     position: absolute;
-    right: 5px;
-    top: 3px;
+    left: 45px;
+    bottom: 100px;
+    width: 24%;
+    height: 18%;
+    /* vaqtincha */
+    padding: 3px;
+}
+
+.boom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 45px;
+    bottom: 100px;
+    width: 24%;
+    height: 18%;
+    /* vaqtincha */
+    padding: 3px;
+}
+
+.booom {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/top.png);
+    background-repeat: no-repeat;
+}
+
+.top {
+    width: 85%;
+    background-image: url(../image/top.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.left {
+    width: 40%;
+    margin-right: 3px;
+}
+
+.right {
+    width: 40%;
+    margin-left: 3px;
+}
+
+.bottom {
+    width: 85%;
+    margin-top: 5px;
 }
 
 .jon {
