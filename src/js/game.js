@@ -385,6 +385,51 @@ function boshqaruv() {
             oyinchi.yurish = false;
     })
 }
+/* =========================== Sensor ===================== */
+function topDown() {
+    oyinchi.el.style.transform = "rotate(0deg)";
+    oyinchi.yurish = true
+    oyinchi.tamon = 1
+}
+
+function topUp() {
+    oyinchi.yurish = false;
+}
+
+function bottomDown() {
+    oyinchi.el.style.transform = "rotate(180deg)";
+    oyinchi.yurish = true
+    oyinchi.tamon = 3
+}
+
+function bottomUp() {
+    oyinchi.yurish = false;
+}
+
+function leftDown() {
+    oyinchi.el.style.transform = "rotate(-90deg)";
+    oyinchi.yurish = true
+    oyinchi.tamon = 4
+}
+
+function leftUp() {
+    oyinchi.yurish = false;
+}
+
+function rightDown() {
+    oyinchi.el.style.transform = "rotate(90deg)";
+    oyinchi.yurish = true
+    oyinchi.tamon = 2
+}
+
+function rightUp() {
+    oyinchi.yurish = false;
+}
+
+function boomDown() {
+    oq()
+}
+
 /* =========================== O'q uzish ===================== */
 function oq() {
     switch (oyinchi.tamon) {
@@ -441,11 +486,11 @@ function urunish() {
 
     oyinchi.el.parentNode.removeChild(oyinchi.el);
 
-    if (jon < 15) {
+    if (jon < 20) {
         jon = 0
         return tugadi()
     }
-    jon = jon - randomBot(Math.floor(jon / 3), Math.floor(jon / 2))
+    jon = jon - randomBot(Math.floor(jon / 2), Math.floor(jon))
     document.querySelector('.oyinchi-joni').innerHTML = jon
 
 
